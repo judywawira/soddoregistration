@@ -54,9 +54,12 @@
 						
 			<artifactId>idgen-api</artifactId>
 												
-		</dependency>
-		
-
+		</dependency>        <dependency>
+        <groupId>org.openmrs.module</groupId>
+        <artifactId>appui-omod</artifactId>
+        <version>1.0</version>
+        <scope>provided</scope>
+    </dependency>
 						
 		<!-- End OpenMRS modules -->
 		
