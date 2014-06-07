@@ -3,10 +3,9 @@
     ui.includeJavascript("uicommons", "angular.min.js")
     ui.includeJavascript("uicommons", "angular-ui/ui-bootstrap-tpls-0.6.0.min.js")
     ui.includeJavascript("soddoregistration", "register.js")
-    ui.includeCss("soddoregistration", "bootstrap.min.css")
 %>
 
-<div id="soddo-reg" ng-app="soddoRegistration" ng-resource="soddoRegistrationController">
+<div id="soddo-reg" ng-app="soddoRegistration" ng-resource="soddoRegistrationController" class="form-group">
     <form name = "soddoForm" novalidate>
         <fieldset>
             <legend>Demographics</legend>
@@ -95,7 +94,7 @@
             </fieldset>
         </div>
 
-        <input type="submit" ng-click ="form.$valid && makepayloads()" value="Save Patient" />
+        <input class='btn btn-primary' type="submit" ng-click ="form.$valid && makepayloads()" value="Save Patient" />
 
         {{registration}}
         <hr>
